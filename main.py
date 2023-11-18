@@ -250,7 +250,7 @@ def main():
 	output_filename = 'output'
 
 	deep_pitch(input_file_path, output_filename + '_deep.wav')
-	high_pitch(input_file_path, output_filename + '_deep.wav')
+	high_pitch(input_file_path, output_filename + '_high.wav')
 	AudioEffect.ghost(input_file_path, output_filename + '_ghost.wav')
 	AudioEffect.robotic(input_file_path, output_filename + '_robotic.wav')
 	AudioEffect.echo(input_file_path, output_filename + '_echo.wav')
