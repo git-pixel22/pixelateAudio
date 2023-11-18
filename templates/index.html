@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
    <title>PixelateAudio</title>
-   <link rel="icon" href="favicon.png">
-   <link rel="stylesheet" type="text/css" href="styles.css">
+   <link rel="icon" href="/static/favicon.png">
+   <link rel="stylesheet" type="text/css" href="/static/styles.css">
    <meta name="description" content="Apply fun voice filters to audio files.">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
    <h1 style="text-align: center;">PixelateAudio</h1> 
 
-   <form id="audio-form">
+   <form id="audio-form" method="post">
        <input type="file" id="audio-file" accept="audio/*">
        <div id="filter-options">
            <div class="filter" id="robotic">Robotic</div>
@@ -24,6 +24,6 @@
        <input type="submit" value="Submit">
    </form>
 
-   <script src="script.js"></script>
+   <script src="/static/script.js"></script>
 </body>
 </html>
