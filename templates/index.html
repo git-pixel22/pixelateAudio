@@ -10,20 +10,20 @@
 <body>
    <h1 style="text-align: center;">PixelateAudio</h1> 
 
-   <form id="audio-form" method="post">
+   <form id="audio-form" method="post" enctype="multipart/form-data">
        <input type="file" id="audio-file" accept="audio/*">
-       <div id="filter-options">
-           <div class="filter" id="robotic">Robotic</div>
-           <div class="filter" id="echo">Echo</div>
-           <div class="filter" id="vader">Vader</div>
-           <div class="filter" id="ghost">Ghost</div>
-           <div class="filter" id="radio">Radio</div>
-           <div class="filter" id="high-pitch">High-Pitch</div>
-           <div class="filter" id="low-pitch">Low-Pitch</div>
-       </div>
+       <label for="filter-options">Select a filter:</label>
+       <select id="filter-options" name="selectedFilter">
+           <option value="robotic">Robotic</option>
+           <option value="echo">Echo</option>
+           <option value="vader">Vader</option>
+           <option value="ghost">Ghost</option>
+           <option value="radio">Radio</option>
+           <option value="high-pitch">High-Pitch</option>
+           <option value="low-pitch">Low-Pitch</option>
+       </select>
        <input type="submit" value="Submit">
    </form>
 
-   <script src="/static/script.js"></script>
 </body>
 </html>
