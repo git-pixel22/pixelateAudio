@@ -26,7 +26,7 @@
 	sound.set_bandpass(50, 2600)
 
 	# Save the resulting processed audio data into a file
-	sound1.save_to_file('out.wav')
+	sound1.save_to_file('out.wav'lin)
 '''
 
 import numpy as np
