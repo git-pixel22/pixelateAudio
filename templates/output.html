@@ -10,7 +10,15 @@
 <body>
    <h1 style="text-align: center;">PixelateAudio</h1> 
 
-   <p>The output audios will be sent here.</p>
-
+   <div>
+       <h2>Filtered Audio List:</h2>
+       {% for effect in audio_effects %}
+           <audio controls>
+               <source src="{{ effect }}" type="audio/wav">
+               Your browser does not support the audio element.
+           </audio>
+           <br>
+       {% endfor %}
+   </div>
 </body>
 </html>
