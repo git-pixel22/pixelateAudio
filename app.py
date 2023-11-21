@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from main import process_audio
+from backend.main import process_audio
 
 app = Flask(__name__)
 
@@ -19,18 +19,17 @@ def index():
 
         file.save('input.wav')
 
-        isDone = process_audio()
+        process_audio()
 
-        list = []
+        audio_files = [
+            "static/output_deep.wav",
+            "static/output_high.wav",
+            "static/output_ghost.wav",
+            "static/output_robotic.wav",
+            "static/output_echo.wav",
+            "static/output_radio.wav",
+            "static/output_vader.wav"
+        ]
 
-        if isDone:
-            list.append("output_deep.wav")
-            list.append("output_high.wav")
-            list.append("output_ghost.wav")
-            list.append("output_robotic.wav")
-            list.append("output_echo.wav")
-            list.append("output_radio.wav")
-            list.append("output_vader.wav")
-
-        return render_template("output.html", audio_files = list)
+        return render_template("output.html", audio_files = audio_files)
 

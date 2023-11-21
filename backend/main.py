@@ -244,14 +244,14 @@ def high_pitch(input_file, output_file):
 def process_audio():
 	
 	input_file_path = 'input.wav'	
-	output_filename = 'output'
+	output_file_path = 'static/output'
 
-	deep_pitch(input_file_path, output_filename + '_deep.wav')
-	high_pitch(input_file_path, output_filename + '_high.wav')
-	AudioEffect.ghost(input_file_path, output_filename + '_ghost.wav')
-	AudioEffect.robotic(input_file_path, output_filename + '_robotic.wav')
-	AudioEffect.echo(input_file_path, output_filename + '_echo.wav')
-	AudioEffect.radio(input_file_path, output_filename + '_radio.wav')
-	AudioEffect.darth_vader(input_file_path, output_filename + '_vader.wav')
+	deep_pitch(input_file_path, output_file_path + '_deep.wav')
+	high_pitch(input_file_path, output_file_path + '_high.wav')
+	AudioEffect.ghost(input_file_path, output_file_path + '_ghost.wav')
+	AudioEffect.robotic(input_file_path, output_file_path + '_robotic.wav')
+	AudioEffect.echo(input_file_path, output_file_path + '_echo.wav')
+	AudioEffect.radio(input_file_path, output_file_path + '_radio.wav')
+	AudioEffect.darth_vader(input_file_path, output_file_path + '_vader.wav')
 
 	return True
