@@ -241,7 +241,7 @@ def high_pitch(input_file, output_file):
         print(f"An error occurred: {e.stderr}")
         # Handle the error here as needed
 
-def main():
+def process_audio():
 	
 	input_file_path = 'input.wav'	
 	output_filename = 'output'
@@ -254,5 +254,4 @@ def main():
 	AudioEffect.radio(input_file_path, output_filename + '_radio.wav')
 	AudioEffect.darth_vader(input_file_path, output_filename + '_vader.wav')
 
-if __name__ == "__main__":
-    main()
+	return True

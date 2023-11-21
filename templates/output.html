@@ -12,9 +12,9 @@
 
    <div>
        <h2>Filtered Audio List:</h2>
-       {% for effect in audio_effects %}
+       {% for file in audio_files %}
            <audio controls>
-               <source src="{{ effect }}" type="audio/wav">
+               <source src="{{ file }}" type="audio/wav">
                Your browser does not support the audio element.
            </audio>
            <br>
