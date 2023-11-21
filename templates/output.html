@@ -3,7 +3,7 @@
 <head>
    <title>PixelateAudio</title>
    <link rel="icon" href="/static/favicon.png">
-   <link rel="stylesheet" type="text/css" href="/static/styles.css">
+   <!-- <link rel="stylesheet" type="text/css" href="/static/styles.css"> -->
    <meta name="description" content="Apply fun voice filters to audio files.">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,11 +13,14 @@
    <div>
        <h2>Filtered Audio List:</h2>
        {% for file in audio_files %}
-           <audio controls>
-               <source src="{{ file }}" type="audio/wav">
-               Your browser does not support the audio element.
-           </audio>
-           <br>
+
+       <span>{{ file }}</span> 
+        <audio controls>
+            <source src="{{ file }}" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
+
        {% endfor %}
    </div>
 </body>
