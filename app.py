@@ -33,21 +33,12 @@ def index():
             "Vader"
         ]
 
-        # List of dynamically named audio files
-        audio_names = [
-            "Deep",
-            "High",
-            "Ghost",
-            "Robotic",
-            "Echo",
-            "Radio",
-            "Vader"
-        ]
-
         # Generating audio file paths with dynamic names
         audio_files = [
             f"static/output_{name.lower()}.wav" for name in audio_names
         ]
 
-        return render_template("output.html", audio_files=audio_files, audio_names=audio_names)
+        # Enumerating the audio files and names as a list of tuples
+        enumerated_audio = list(zip(audio_names, audio_files))
 
+        return render_template("output.html", enumerated_audio=enumerated_audio)
