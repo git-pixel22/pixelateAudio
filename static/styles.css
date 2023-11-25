@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Silkscreen';
+  src: url('slkscr.ttf') format('truetype'),
+       url('slkscrb.ttf') format('truetype'),
+       url('slkscrc.ttf') format('truetype'); /* Add other font formats if available */
+  /* You can specify font-weight and font-style here */
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,15 +13,23 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('background.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    font-family: 'Silkscreen', sans-serif;
+    background-image: url('background-1.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-   background-attachment: fixed; 
+    background-attachment: fixed; 
     color: white;
  }
- 
+
+ h1 {
+  font-size: -webkit-xxx-large;
+}
+
+h1:hover {
+  color: orange;
+}
+
  #audio-form {
     display: flex;
     flex-direction: column;
@@ -77,3 +93,21 @@ body {
  padding-left: 8px;
  padding-right: 8px;
  }
+
+ input[type=submit] {
+  background-color: rgb(41 35 35);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+  color: orange;
+}
