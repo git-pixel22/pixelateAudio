@@ -5,8 +5,10 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
+
     if request.method == "GET":
         return render_template("index.html")
+    
     elif request.method == "POST":
 
         if 'inputAudio' not in request.files:
@@ -21,15 +23,31 @@ def index():
 
         process_audio()
 
-        audio_files = [
-            "static/output_deep.wav",
-            "static/output_high.wav",
-            "static/output_ghost.wav",
-            "static/output_robotic.wav",
-            "static/output_echo.wav",
-            "static/output_radio.wav",
-            "static/output_vader.wav"
+        audio_names = [
+            "Deep",
+            "High",
+            "Ghost",
+            "Robotic",
+            "Echo",
+            "Radio",
+            "Vader"
         ]
 
-        return render_template("output.html", audio_files = audio_files)
+        # List of dynamically named audio files
+        audio_names = [
+            "Deep",
+            "High",
+            "Ghost",
+            "Robotic",
+            "Echo",
+            "Radio",
+            "Vader"
+        ]
+
+        # Generating audio file paths with dynamic names
+        audio_files = [
+            f"static/output_{name.lower()}.wav" for name in audio_names
+        ]
+
+        return render_template("output.html", audio_files=audio_files, audio_names=audio_names)
 
