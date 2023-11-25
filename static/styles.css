@@ -6,9 +6,11 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('/static/background.jpg');
+    background-image: url('background.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+   background-attachment: fixed; 
     color: white;
  }
  
@@ -27,5 +29,51 @@ body {
     width: 100%;
     margin-bottom: 20px;
  }
-
  
+ /* color for background of audio tag */
+ audio::-webkit-media-controls-panel {
+   background-color: #56AEFF;
+ }
+ 
+ /* color for mute button   */
+ audio::-webkit-media-controls-mute-button {
+ background-color: #B1D4E0;
+ border-radius: 50%;
+ }
+ 
+ /* color for play button */
+ audio::-webkit-media-controls-play-button {
+   background-color: #B1D4E0;
+   border-radius: 50%;
+ }
+ 
+ /* color for hovering the play button */
+ audio::-webkit-media-controls-play-button:hover {
+   background-color: rgba(177,212,224, .7);
+ }
+ 
+ /* color for time passed in audio player */
+ audio::-webkit-media-controls-current-time-display {
+   color: #fff;
+ }
+ 
+ /* color for total time in audio player */
+ audio::-webkit-media-controls-time-remaining-display {
+   color: #fff;
+ }
+ 
+ /* color for timeline of the audio player */
+ audio::-webkit-media-controls-timeline {
+   background-color: #B1D4E0;
+   border-radius: 25px;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+ 
+ /* color for volume slider   */
+ audio::-webkit-media-controls-volume-slider {
+ background-color: #B1D4E0;
+ border-radius: 25px;
+ padding-left: 8px;
+ padding-right: 8px;
+ }
