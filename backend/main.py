@@ -253,5 +253,3 @@ def process_audio():
 	AudioEffect.echo(input_file_path, output_file_path + '_echo.wav')
 	AudioEffect.radio(input_file_path, output_file_path + '_radio.wav')
 	AudioEffect.darth_vader(input_file_path, output_file_path + '_vader.wav')
-
-	return True
