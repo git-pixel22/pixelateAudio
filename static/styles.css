@@ -89,3 +89,23 @@ audio {
  audio::-webkit-media-controls-panel {
   background-color: orange;
 }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: orange;
+}
