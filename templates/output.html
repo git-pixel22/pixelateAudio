@@ -6,9 +6,14 @@
    <link rel="stylesheet" type="text/css" href="/static/styles.css">
    <meta name="description" content="Apply fun voice filters to audio files.">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body {
+        background-image: url('/static/background-2.png');
+    }
+   </style>
 </head>
 <body>
-   <h1 style="text-align: center;">PixelateAudio</h1> 
+   <h1 style="text-align: center;"> <a href="http://"></a> PixelateAudio</h1> 
 
    <div>
        <h2>Filtered Audio List:</h2>
@@ -21,7 +26,7 @@
            <tr>
                <td>{{ name }}</td>
                <td>
-                   <audio controls>
+                   <audio class="audio-list" controls>
                        <source src="{{ file }}" type="audio/wav">
                        Your browser does not support the audio element.
                    </audio>
