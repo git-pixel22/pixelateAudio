@@ -1,4 +1,4 @@
 flask
-numpy==1.21.3
-scipy==1.7.1
-ffmpeg-python==0.2.0
+numpy
+scipy
+ffmpeg-python
