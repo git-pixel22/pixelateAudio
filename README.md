@@ -2,6 +2,13 @@
 
 This little thing was built because one day I just wanted to send a voice note to a person without revealing my actual voice. If the application is not available on the cloud or the link has expired, then you can run this on your local machine.
 
+# This How It Looks &nbsp; ; )
+
+<video controls width="250">
+  <source src="" type="video/mp4" />
+</video>
+
+
 # Steps To Run The Application Locally
 
 1. Clone the repository.
