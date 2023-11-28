@@ -4,9 +4,8 @@ This little thing was built because one day I just wanted to send a voice note t
 
 # This How It Looks &nbsp; ; )
 
-<video controls width="250">
-  <source src="" type="video/mp4" />
-</video>
+
+https://github.com/git-pixel22/pixelateAudio/assets/84857474/66de6618-8b4c-41db-80db-b016831ac5a8
 
 
 # Steps To Run The Application Locally
