@@ -35,7 +35,7 @@ def index():
 
         # Generating audio file paths with dynamic names
         audio_files = [
-            f"static/output_{name.lower()}.wav" for name in audio_names
+            f"./static/output_{name.lower()}.wav" for name in audio_names
         ]
 
         # Enumerating the audio files and names as a list of tuples
