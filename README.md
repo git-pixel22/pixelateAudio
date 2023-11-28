@@ -2,11 +2,14 @@
 
 This little thing was built because one day I just wanted to send a voice note to a person without revealing my actual voice. If the application is not available on the cloud or the link has expired, then you can run this on your local machine.
 
+&nbsp;
+
 # This How It Looks &nbsp; ; )
 
 
 https://github.com/git-pixel22/pixelateAudio/assets/84857474/66de6618-8b4c-41db-80db-b016831ac5a8
 
+&nbsp;
 
 # Steps To Run The Application Locally
 
