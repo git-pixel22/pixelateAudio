@@ -1,32 +1,41 @@
-# pixelateAudio
+# Intro
 
-This little thing was build because one day I just wanted to send a voice note to a person without revealing my actual voice.
+This little thing was built because one day I just wanted to send a voice note to a person without revealing my actual voice. If the application is not available on the cloud or the link has expired, then you can run this on your local machine.
 
-If the application is not available on cloud or the link has expired, then you can run this on your local machine.
+# Steps To Run The Application Locally
 
-Just clone the repo
+1. Clone the repository.
 
 ```
-git clone <link>
+git clone https://github.com/git-pixel22/pixelateAudio.git
 ```
+&nbsp;
 
-then simply move into project directory if using terminal by doing
+2. Move into the project directory if using the terminal by doing
 
 ```
 cd pixelateaudio
 ```
 
-Now install the requirements by doing
+Or simply open the folder in VS Code.
+
+&nbsp;
+
+3. Install the requirements of the project.
 
 ```
 pip install -r requirements.txt
 ```
 
-Now run the program by
+&nbsp;
+
+4. Run the application.
 ```
 flask run
 ```
 
-Open your browser and go to your localhost's port 5000.
+&nbsp;
 
-And there you have it.
+5. Open your browser and go to your localhost's port 5000.
+
+&nbsp;
