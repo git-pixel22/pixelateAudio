@@ -2,7 +2,7 @@
   font-family: 'Silkscreen';
   src: url('slkscr.ttf') format('truetype'),
        url('slkscrb.ttf') format('truetype'),
-       url('slkscrc.ttf') format('truetype'); /
+       url('slkscrc.ttf') format('truetype');
 }
 
 body {
