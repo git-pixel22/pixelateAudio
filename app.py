@@ -42,3 +42,6 @@ def index():
         enumerated_audio = list(zip(audio_names, audio_files))
 
         return render_template("output.html", enumerated_audio=enumerated_audio)
+
+if __name__ == "__main__":
+    app.run(debug=False, host='0.0.0.0')
