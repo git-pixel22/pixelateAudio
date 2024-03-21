@@ -46,4 +46,8 @@ flask run
 
 5. Open your browser and go to your localhost's port 5000.
 
+```
+http://localhost:5000/
+```
+
 &nbsp;
