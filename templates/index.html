@@ -11,15 +11,22 @@
    <h1 style="text-align: center;">PixelateAudio</h1> 
 
    <form action="/" method="post" id="audio-form" enctype="multipart/form-data">
-       <input type="file" name="inputAudio" id="upload" accept="audio/wav" required>
+
+      <input  name="inputAudio" type="file" id="file-upload" class="input-file" accept="audio/wav" required/>
+      <label for="file-upload" class="input-label">
+          <span id="file-name" class="file-name">Choose A File !!</span>
+         </label>       
        <input type="submit" value="Submit">
    </form>
    <p> NOTE: Input only .wav files if you don't want the things to break ; ) </p>
+
    <footer>
       <a href="https://twitter.com/x_pixel22">Twitter</a>
       <a href="https://github.com/git-pixel22">GitHub</a>
       <a href="https://www.linkedin.com/in/its-rajat/">LinkedIn</a>
    </footer>
+
+   <script src="/static/script.js"></script>
 
 </body>
 </html>
